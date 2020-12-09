@@ -8,6 +8,7 @@ c) Password Hashing <br/>
 d) MongoDB Storage <br/>
 f) JWT <br/>
 g) Session Maintenance <br/>
+h) Cookies
 
 ## Tools and Tech
 
