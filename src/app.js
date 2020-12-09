@@ -98,6 +98,7 @@ app.post('/login',async (req,res)=>{
 })
 
 
+/* 
 const createToken = async ()=>{
     const token = await jwt.sign({_id:"5fcfcc2eea19d10f074a4950"},"abcdefghijklmnopqrstuvwxyzfsdafdasdasfds",{
         expiresIn : '2 minutes'
@@ -108,7 +109,8 @@ const createToken = async ()=>{
     console.log(userVar);
 }
 
-createToken();
+createToken(); 
+*/
 
 app.listen(port,()=>{
     console.log(`listening on port ${port}`);
