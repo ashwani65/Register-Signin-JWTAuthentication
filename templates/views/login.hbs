@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-sm-6 col-mid-4 mx-auto">
+                <h1 class="text-center login-title my-5">Employee Login Form</h1>
+                <div class="account-wall">
+                    <img src="https://source.unsplash.com/random" 
+                         alt="" 
+                         width="300"
+                         height="300"
+                         class="profileimg"
+                    >
+                    <form action="/login" class="form-signin" method="POST">
+                        <input type="email" class="form-control" placeholder="Email" required name="email">
+                        <input type="password" class="form-control" placeholder="password" required name="password">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+
+                        <label  class="checkbox pull-left mt-3">
+                            <input type="checkbox" value="remember-me">
+                            Remember me
+                        </label>
+
+                        <a href="#" class="pull-right need-help">Need Help</a>
+                        <span class="clearfix"></span>
+                    </form>
+                </div>
+                <a href="/register" class="text-center new-account">Create an account</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js" integrity="sha512-7yA/d79yIhHPvcrSiB8S/7TyX0OxlccU8F/kuB8mHYjLlF1MInPbEohpoqfz0AILoq5hoD7lELZAYYHbyeEjag==" crossorigin="anonymous"></script>"></script>
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

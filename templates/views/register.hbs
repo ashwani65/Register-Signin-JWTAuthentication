@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {{!-- {{>header}} --}}
+    <title>Registration Form</title>
+</head>
+<body>
+    {{!-- {{>navbar}} --}}
+    <div class="container register mb-5">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" />
+                <h3>Welcome</h3>
+                <p>to the Complete Mern Backend Course</p>
+                <input type="submit" name="" value="login"><br>
+            </div>
+            
+            <div class="col-md-9 register-right">
+                <ul class="nav nav tabs nav justified" id="mytab" role="tablist">
+                        <li class="nav-item">
+                            <a href="/register" class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Registration</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/login" class="nav-link" id="profile-tab" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">Login</a>
+                        </li>
+                </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h3 class="register-heading">User Registration From</h3>
+
+                <form action="/register" method="POST">
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name" value="" name="firstname"/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" value="" name="email"/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" minlenght = '10' maxlength = '10' name = 'phone' class="form-control" placeholder="Your Phone *" value="" />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" value="" name="password"/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class = 'form-control' placeholder = 'last name*' value ="" name="lastname">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="maxl">
+                                    <label class="radio inline">
+                                        <input type="radio" name="gender" value="male" checked>
+                                        <span> Male </span>
+                                    </label>
+                                    
+                                    <label class="radio inline">
+                                        <input type="radio" name="gender" value="female">
+                                        <span> Male </span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter your age *" value="" name="age">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" value="" name="confirmpassword"/>
+                            </div>
+
+                            <input type="submit" class="btnRegister" value="Register">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
